@@ -1,0 +1,62 @@
+.App {
+  .openForm {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #7bccc2;
+    top: 3vh;
+    right: 2vw;
+    cursor: pointer;
+    &:after {
+      content: '×';
+      display: inline-block;
+      font-size: 36px;
+      margin-left: 13px;
+      transition: .6s all;
+      transform: rotate(45deg);
+      transform-origin: center center;
+    }
+  }
+  .opened {
+    &:after {
+      transform: rotate(0deg);
+    }
+  }
+  .no_adverts {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .form-layout {
+    top: 0;
+    left: 0;
+    position: fixed;
+    animation: fadeIn .6s both;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search {
+    -webkit-appearance: none;
+    width: 15%;
+    height: 30px;
+    top: 3vh;
+    left: 2vw;
+    border-radius: 5px;
+    background: #7bccc2;
+    border-radius: 3px;
+    border: none;
+    position: absolute;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

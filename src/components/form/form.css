@@ -1,0 +1,39 @@
+.form {
+  width: 50vw;
+  height: 500px;
+  border-radius: 7px;
+  background: #7bccc2;
+  display: flex;
+  justify-content: center;
+  &_content {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-around;
+    &_name, &_description {
+      -webkit-appearance: none;
+      width: 100%;
+      background:  #faebd7;
+      border: 3px solid #b4a99e;
+      border-radius: 3px;
+    }
+    &_name {
+      height: 30px;
+    }
+    &_description {
+      height: 100px;     
+    }
+    &_sub-info {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .city, .phoneNumber {
+        flex: 1;
+      }
+    }
+    &_submit {
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+}
